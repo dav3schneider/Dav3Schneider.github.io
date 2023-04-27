@@ -1,9 +1,127 @@
-<html>
- 
-<body>
-  <h1>Alex Schneider</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
-</html>
+<html><head>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <title>Alex's HTML/CSS Cheat Sheet</title>
+  </head>
+  <body>
+    <h1>HTML Table Reference</h1>
+    <p id="author">by Alexander Schneider</p>
+    <h2>Table Tags</h2>
+    <table>
+      <thead>
+        <tr><th>Tag</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="code">&lt;table&gt;</span></td>
+          <td>Table</td>
+          <td>The wrapper element for all HTML tables.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;thead&gt;</span></td>
+          <td>Table Head</td>
+          <td>The set of rows defining the column headers in a table.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;tbody&gt;</span></td>
+          <td>Table Body</td>
+          <td>The set of rows containing actual table data.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;tr&gt;</span></td>
+          <td>Table Row</td>
+          <td>The table row container.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;td&gt;</span></td>
+          <td>Table Data</td>
+          <td>The table row container.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;tfoot&gt;</span></td>
+          <td>Table Foot</td>
+          <td>The set of rows defining the footer in a table.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Table Attributes</h2>
+    <table>
+      <thead>
+        <tr><th>Attribute</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+            <td><span class="code">colspan</span></td> 
+            <td>Column Span</td>
+            <td>Defines how many columns a td element should span.</td>
+          </tr>
+        <tr>
+          <td><span class="code">rowspan</span></td>
+          <td>Row Span</td>
+          <td>Defines how many rows a td element should span.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Image Tags & CSS Selectors</h2>
+    <table>
+      <thead>
+        <tr><th>Attribute</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+            <td><span class="code">&lt;img&gt;</span></td> 
+            <td>Image in HTML</td>
+            <td>Define src either through URL or folder structure</td>
+          </tr>
+        <tr>
+          <td><span class="code">background-image</span></td>
+          <td>Bakcground Image</td>
+          <td>define via a url() path. </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>CSS Positions</h2>
+    <table>
+      <thead>
+        <tr><th>Attribute</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+            <td><span class="code">static</span></td> 
+            <td>Static Position</td>
+            <td>Default position for an element.</td>
+        </tr>
+        <tr>
+            <td><span class="code">relative</span></td> 
+            <td>relative Position</td>
+            <td>Relative to its normal position. When using top/bottom/left/right it is putting the element <em>away</em> from that position</td>
+        </tr>
+        <tr>
+            <td><span class="code">fixed</span></td> 
+            <td>fixed Position</td>
+            <td>Will always stay in the same place, even when the page is scrolled. The top/right/bottom/left properties are used to position the element.</td>
+        </tr>
+        <tr>
+            <td><span class="code">absolute</span></td> 
+            <td>absolute Position</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="code">sticky</span></td> 
+            <td>sticky Position</td>
+            <td></td>
+        </tr>
+      </tbody>
+    </table>
+  
+</body></html>
