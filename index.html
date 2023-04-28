@@ -5,6 +5,15 @@
   <body>
     <h1>HTML Table Reference</h1>
     <p id="author">by Alexander Schneider</p>
+
+<ul class="breadcrumb">
+    <li class="location"><a href="#TableTags">Table Tags</a></li>
+    <li class="location"><a href="#Table Attributes">Table Attributes</a></li>
+    <li class="location"><a href="#Image Tags">Image Tags</a></li>
+    <li class="location"><a href="#CSS Positions">CSS Positions</a></li>
+    <li class="location"><a href="#Breadcrumbs">Breadcrumbs</a></li>
+</ul>
+  <div id="TableTags">
     <h2>Table Tags</h2>
     <table>
       <thead>
@@ -45,7 +54,8 @@
         </tr>
       </tbody>
     </table>
-
+  </div>
+  <div id="Table Attributes">
     <h2>Table Attributes</h2>
     <table>
       <thead>
@@ -66,7 +76,8 @@
         </tr>
       </tbody>
     </table>
-
+  </div>
+  <div id="Image Tags">
     <h2>Image Tags & CSS Selectors</h2>
     <table>
       <thead>
@@ -82,12 +93,13 @@
           </tr>
         <tr>
           <td><span class="code">background-image</span></td>
-          <td>Bakcground Image</td>
+          <td>Background Image</td>
           <td>define via a url() path. </td>
         </tr>
       </tbody>
     </table>
-
+  </div>
+  <div id="CSS Positions">
     <h2>CSS Positions</h2>
     <table>
       <thead>
@@ -123,5 +135,48 @@
         </tr>
       </tbody>
     </table>
-  
+  </div>
+  <div id="breadcrumbs">
+    <h2>Breadcrumbs</h2>
+    <table>
+      <thead>
+        <tr><th>Attribute</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+            <td><span class="code">..</span></td> 
+            <td>Location</td>
+            <td>Location of where you are on the site and past locations.</td>
+        </tr>
+        <tr>
+            <td><span class="code">..</span></td> 
+            <td>Attribute</td>
+            <td>Similar to location, but an attribute of your location. Example: Hotels -> Queen Room // Pets - Beach view</td>
+        </tr>
+        <tr>
+            <td><span class="code">..</span></td> 
+            <td>Path-based</td>
+            <td>Based on where the user has been on the site. Custom for each user. Try to avoid.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="breadcrumbs-text">Breadcrumbs are created via a <code>&lt;ul&gt;&lt;/ul&gt;</code> list and includes the class breadcrumbs. Each <code>&lt;li&gt;&lt;/li&gt;</code> will have a <code>href=&quot;#&quot;</code> with # being the location or # if that is the current location</p>
+    <div class="example">
+    <h3>Example Below:</h3>
+    <div class="code-block">
+      <pre>
+        <code>
+          &lt;ul class=&quot;breadcrumb&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;shop.html&quot;&gt;Shop&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;groceries.html&quot;&gt;Groceries&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;blueberries.html&quot;&gt;Blueberries&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Organic&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;</code>
+        </pre>
+    </div>
+    </div>
+    </div>
+
 </body></html>
