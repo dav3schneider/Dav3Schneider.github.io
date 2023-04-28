@@ -1,39 +1,159 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #FFF5E6;
+    box-sizing: border-box;
   }
   
-  h1 {
+h1 {
     text-align: center;
   }
   
-  h2 {
+h2 {
     color: #02664F;
     text-align: center;
   }
   
-  table {
+table {
     border: 2px solid #78AB46;
     width: 650px;
     margin: 0 auto;
   }
   
-  thead {
+thead {
     background-color: #2E8B57;
   }
   
-  td {
+td {
     border-top: 1px solid #78AB46;
   }
   
-  .code {
+.code {
     font-family: monospace;
     background-color: #FFF5E6;
   }
 
-  #author {
+#author {
     font-style: italic;
     font-weight: bold;
     font-size: 12px;
     text-align: center;
-  }
+}
+
+#breadcrumbs-text {
+    text-align: center;
+    width: 650px;
+    margin: 25px auto;
+    line-height: 1.5;
+}
+
+.example {
+    width: 650px;
+    margin: 25px auto;
+}
+
+.example h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p code {
+    background-color: black;
+    color: white;
+    border: 2px solid green;
+    margin: 5px;
+    padding: 2px;
+}
+
+pre {
+  background-color: black;
+  border: 3px solid green;
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Style for the breadcrumb list */
+.breadcrumb {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each breadcrumb item */
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Style for the chevron icon */
+.breadcrumb li::after {
+  content: "\203A";
+  margin-left: 10px;
+  color: #fff;
+}
+
+/* Style for the first breadcrumb item */
+.breadcrumb li:first-child::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #ff7f50;
+  margin-right: 10px;
+}
+
+/* Style for the second breadcrumb item */
+.breadcrumb li:nth-child(2)::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #00ff00;
+  margin-right: 10px;
+}
+
+/* Style for the third breadcrumb item */
+.breadcrumb li:nth-child(3)::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #ff4500;
+  margin-right: 10px;
+}
+
+/* Style for the fourth breadcrumb item */
+.breadcrumb li:nth-child(4)::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #1e90ff;
+  margin-right: 10px;
+}
+
+/* Style for the fifth breadcrumb item */
+.breadcrumb li:nth-child(5)::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #02664F;
+  margin-right: 10px;
+}
+
+/* Style for the last breadcrumb item */
+.breadcrumb li:last-child {
+  font-weight: bold;
+}
